@@ -5,3 +5,4 @@
 # provisioning is finished. This allows for various scripts and configurations to
 # be available to us.
 #
+/usr/bin/env rvm use system
