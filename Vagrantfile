@@ -11,8 +11,8 @@ Vagrant.configure("2") do |config|
 
   # Configurations from 1.0.x can be placed in Vagrant 1.1.x specs like the following.
   config.vm.provider :virtualbox do |v|
-    v.customize ["modifyvm", :id, "--memory", 1024]
-    v.customize ["modifyvm", :id, "--cpus", 1]
+    v.customize ["modifyvm", :id, "--memory", 2048]
+    v.customize ["modifyvm", :id, "--cpus", 2]
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 
@@ -148,6 +148,7 @@ Vagrant.configure("2") do |config|
   # Please see VVV and Vagrant documentation for additional details.
   #
   # config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 22, host: 2230, id: "ssh"
 
   # Drive mapping
   #
