@@ -30,6 +30,7 @@ apt_package_check_list=(
   # Our base packages for php7.0. As long as php7.0-fpm and php7.0-cli are
   # installed, there is no need to install the general php7.0 package, which
   # can sometimes install apache as a requirement.
+
   php7.0-fpm
   php7.0-cli
 
@@ -38,15 +39,17 @@ apt_package_check_list=(
   php7.0-dev
 
   # Extra PHP modules that we find useful
-  php-imagick
+
   php-memcache
   php-pear
+  php7.0-imagick
   php7.0-bcmath
   php7.0-curl
   php7.0-gd
   php7.0-mbstring
   php7.0-mcrypt
   php7.0-mysql
+  php7.0-opcache
   php7.0-imap
   php7.0-json
   php7.0-soap
