@@ -61,7 +61,7 @@ apt_package_check_list=(
   memcached
 
   # mysql is the default database
-  mysql-server
+  mysql-server-5.6
 
   # other packages that come in handy
   imagemagick
